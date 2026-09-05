@@ -1,66 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-margin:0;
-font-family:Arial,sans-serif;
+    font-family:'Segoe UI',sans-serif;
+    line-height:1.6;
+    background:#f8f9fa;
 }
 
 header{
-background:#083B5C;
-padding:15px;
+    background:#083B5C;
+    padding:15px 40px;
+    position:sticky;
+    top:0;
+    z-index:100;
 }
 
 .container{
-display:flex;
-justify-content:space-between;
-align-items:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
-height:70px;
+    height:80px;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:10px;
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#35B54A;
 }
 
 .hero{
-background:#35B54A;
-text-align:center;
-padding:100px 20px;
-color:white;
+    background:linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+    min-height:80vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
 }
 
 .btn{
-background:#F85A36;
-padding:15px 30px;
-color:white;
-text-decoration:none;
-border-radius:5px;
+    display:inline-block;
+    background:#F85A36;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#d94728;
 }
 
 section{
-padding:60px 20px;
-text-align:center;
+    padding:80px 20px;
+    text-align:center;
 }
 
 .cards{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
+    margin-top:30px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 .card{
-width:250px;
-padding:25px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-border-radius:10px;
+    background:white;
+    width:280px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#083B5C;
+    margin-bottom:10px;
 }
 
 footer{
-background:#083B5C;
-color:white;
-text-align:center;
-padding:20px;
+    background:#083B5C;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
 }
